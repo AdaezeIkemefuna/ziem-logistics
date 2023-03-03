@@ -1,0 +1,35 @@
+.navigation {
+  @include fixedPosition;
+  @include flexCenterCenter;
+  padding: $sm-font $xxl-font;
+  z-index: 2;
+  box-shadow: 0 4px 5px $light-gray;
+
+  &__wrapper {
+    @include flexSpaceCenter;
+    width: 100%;
+
+    .navigation__left {
+      @include grayHoverPointer;
+    }
+
+    #signup {
+      background-color: transparent;
+      color: $black-color2;
+    }
+
+    .navigation__right a {
+      margin-left: 3rem;
+      color: $black-color2;
+      transition: all 0.3s;
+
+      &:hover {
+        @include grayHoverPointer;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

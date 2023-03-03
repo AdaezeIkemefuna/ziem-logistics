@@ -1,0 +1,8 @@
+.btn {
+  @include flexInlineCenter;
+  border-radius: 12px;
+  border: 1px solid $primary-color;
+  color: $white-color;
+  padding: $xs-font $lg-font;
+  background-color: $primary-color;
+}
